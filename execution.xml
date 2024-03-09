@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Testfirefox">
+  <parameter name="BrowserName" value="firefox"></parameter>
+    <classes>
+      <class name="com.parallelExecutionTestNG.createAccountScript"/>
+      <class name="com.parallelExecutionTestNG.LoginScript"/>
+      <class name="com.parallelExecutionTestNG.BaseScript"/>
+    </classes>
+    
+  </test> <!-- Test -->
+   <test thread-count="5" name="Testchrome">
+  <parameter name="BrowserName" value="chrome"></parameter>
+    <classes>
+      <class name="com.parallelExecutionTestNG.createAccountScript"/>
+      <class name="com.parallelExecutionTestNG.LoginScript"/>
+      <class name="com.parallelExecutionTestNG.BaseScript"/>
+    </classes>
+    </test>
+     <test thread-count="5" name="TestEdge">
+  <parameter name="BrowserName" value="edge"></parameter>
+    <classes>
+      <class name="com.parallelExecutionTestNG.createAccountScript"/>
+      <class name="com.parallelExecutionTestNG.LoginScript"/>
+      <class name="com.parallelExecutionTestNG.BaseScript"/>
+    </classes>
+    </test>
+  
+</suite> <!-- Suite -->
